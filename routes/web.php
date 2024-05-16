@@ -24,6 +24,7 @@ Route::put("products/{id}/update", [productController::class,'update'])->name('p
 Route::get('/delete/{id}',[productController::class,"Delete"])->name('delete');
 
 // Category Route Here....(Resource Route)
+
 Route::resource('/categories',CategoryController::class);
 
 
