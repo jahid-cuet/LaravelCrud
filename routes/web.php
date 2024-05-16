@@ -22,6 +22,7 @@ Route::get("products/{id}/edit", [productController::class,'Edit'])->name('produ
 Route::put("products/{id}/update", [productController::class,'update'])->name('products.update');
 
 Route::get('/delete/{id}',[productController::class,"Delete"])->name('delete');
+Route::get('/delete/{id}',[productController::class,"Delete"])->name('delete');
 
 // Category Route Here....(Resource Route)
 
