@@ -20,12 +20,8 @@ Route::get('/products/create', [productController::class,'create'])->name('produ
 Route::post('/products/store', [productController::class,'store'])->name('products.store');
 Route::get("products/{id}/edit", [productController::class,'Edit'])->name('products.edit');
 Route::put("products/{id}/update", [productController::class,'update'])->name('products.update');
-
 Route::get('/delete/{id}',[productController::class,"Delete"])->name('delete');
-Route::get('/delete/{id}',[productController::class,"Delete"])->name('delete');
-
 // Category Route Here....(Resource Route)
-
 Route::resource('/categories',CategoryController::class);
 
 
